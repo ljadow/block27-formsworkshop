@@ -1,0 +1,22 @@
+.formContainer, .authenticate {
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    width: 15rem;
+}
+
+.formContainer {
+    background-color: pink;
+}
+
+.authenticate {
+    background-color: palegoldenrod;
+}
+
+h2{
+    margin: 0px;
+}
+
+input {
+    width: 7rem;
+}
