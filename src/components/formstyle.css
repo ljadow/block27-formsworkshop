@@ -1,4 +1,5 @@
-.formContainer, .authenticate {
+.formContainer,
+.authenticate {
     border-radius: 1rem;
     padding: 2rem;
     margin: 1rem;
@@ -6,17 +7,31 @@
 }
 
 .formContainer {
-    background-color: pink;
+    background-color: #afdff5;
 }
 
 .authenticate {
-    background-color: palegoldenrod;
+    background-color: #CBC3E3;
 }
 
-h2{
+h2 {
     margin: 0px;
 }
 
 input {
     width: 7rem;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #47ba47;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
 }
