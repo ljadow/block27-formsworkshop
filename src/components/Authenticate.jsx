@@ -17,9 +17,10 @@ export default function Authenticate({ token, setToken }) {
                 }
             })
             const result = await response.json();
+            const user = result.data.username.username
             setToken(result.token)
+            setUserData(user)
             setsuccessMessage(result.message)
-            setUserData(result.data.iat)
             setError("")
         }
         catch(error){
@@ -32,7 +33,7 @@ export default function Authenticate({ token, setToken }) {
         <div className="authenticate">
             <h2>Authenticate</h2>
             {successMessage&&successMessage!=="jwt malformed" ? <p className="success">{successMessage}</p> : ""}
-            {userData ? <p>User IAT: {userData}</p> : ""}
+            {userData ? <p>Username: {userData}</p> : ""}
             {error ? <p className="error">{error}</p> : ""}
             <button onClick={handleClick}>Authenticate Token</button>
         </div>

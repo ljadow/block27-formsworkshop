@@ -30,7 +30,7 @@ export default function SignUpForm({ token, setToken }) {
                 const APIpost = await response.json();
                 setToken(APIpost.token)
                 // console.log("API Post: ", APIpost)
-                // console.log("Token: ", token)
+                console.log("Token: ", token)
                 setUsername("")
                 setPassword("")
             }//else close
